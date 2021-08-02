@@ -13,18 +13,18 @@ class User:
         self.username = username
         self.password = password
 
-# #########save multiple users#########
+#########save multiple users#########
 
-#     def save_user(self):
-#         User.user_list.append(self)
+    def save_user(self):
+        User.user_list.append(self)
 
-#         ###########Delete User######
+        ###########Delete User######
 
-#     def delete_user(self):
-#         '''
-#         delete a user account
-#         '''
-#         User.user_list.remove(self)
+    def delete_user(self):
+        '''
+        delete a user account
+        '''
+        User.user_list.remove(self)
 
 
 #         ############Find User##############
