@@ -15,19 +15,19 @@ class Credentials:
 
         #########save credentials##########
 
-    # def save_cred(self):
-    #     '''
-    #     self credentials in cred_list
-    #     '''
-    #     Credentials.cred_list.append(self)
+    def save_cred(self):
+        '''
+        self credentials in cred_list
+        '''
+        Credentials.cred_list.append(self)
 
-    #     ############Delete credentils#########
+        ############Delete credentils#########
 
-    # def delete_cred(self):
-    #     '''
-    #     delete credentials 
-    #     '''
-    #     Credentials.cred_list.remove(self)    
+    def delete_cred(self):
+        '''
+        delete credentials 
+        '''
+        Credentials.cred_list.remove(self)    
 
     #     ###########search for credentials#######
 
