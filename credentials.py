@@ -5,7 +5,7 @@ class Credentials:
     class that creates instaces of user accounts
     '''
     cred_list = []
-      #Assign propety to credentil list#
+#Assign propety to credentil list
     def __init__(self, account , email , passlock):
     
         self.account = account
@@ -13,7 +13,7 @@ class Credentials:
         self.passlock = passlock
 
 
-        #########save credentials##########
+#save credentials
 
     def save_cred(self):
         '''
@@ -21,7 +21,7 @@ class Credentials:
         '''
         Credentials.cred_list.append(self)
 
-        ############Delete credentils#########
+#Delete the credentils
 
     def delete_cred(self):
         '''
@@ -29,31 +29,31 @@ class Credentials:
         '''
         Credentials.cred_list.remove(self)    
 
-    #     ###########search for credentials#######
+#search for credentials
 
-    # @classmethod
-    # def find_account(cls, account):
-    #     '''
-    #     search for accounts
-    #     '''
-    #     for cred in cls.cred_list:
-    #         if cred.account == account:
-    #             return cred    
+    @classmethod
+    def find_account(cls, account):
+        '''
+        search for accounts
+        '''
+        for cred in cls.cred_list:
+            if cred.account == account:
+                return cred    
 
-    #             ##############confirm credentials########
+#confirm credentials
 
-    # @classmethod
-    # def cred_exists(cls, account):
-    #     '''
-    #     confirm a class actually exists
-    #     '''
-    #     for cred in cls.cred_list:
-    #         if cred.account == account:
-    #             return True
-    #     return False            
+    @classmethod
+    def cred_exists(cls, account):
+        '''
+        confirm a class actually exists
+        '''
+        for cred in cls.cred_list:
+            if cred.account == account:
+                return True
+        return False            
 
 
-    #     #################Display credentials################
+#Display credentials
 
     # @classmethod
     # def display_cred(cls):
@@ -62,7 +62,7 @@ class Credentials:
     #     '''
     #     return cls.cred_list
 
-    # ##########copy passwoed############
+#copy passwoed
 
 
     # @classmethod
