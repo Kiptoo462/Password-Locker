@@ -1,5 +1,5 @@
 
-  #CLASS USER#
+#CLASS USER#
 class User:
     '''
     Class that generates new instances of user
@@ -13,12 +13,12 @@ class User:
         self.username = username
         self.password = password
 
-#########save multiple users#########
+#save multiple users
 
     def save_user(self):
         User.user_list.append(self)
 
-        ###########Delete User######
+#Delete User
 
     def delete_user(self):
         '''
@@ -27,7 +27,7 @@ class User:
         User.user_list.remove(self)
 
 
-        #Find User#
+#Find User
 
     @classmethod
     def find_user(cls, username):
