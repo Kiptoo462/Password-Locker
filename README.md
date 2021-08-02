@@ -39,7 +39,7 @@ https://github.com/Kiptoo462/Password-Locker.git
   + delete a credentials account that I no longer need in the application.
 
 ## Technologies Used
-  *Python3.8
+  * Python3.8
 
 ## Support and contact details
 victor.kiptoo@student.moringaschool.com
