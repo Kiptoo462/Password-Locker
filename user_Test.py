@@ -16,7 +16,7 @@ class TestUser(unittest.TestCase):
         '''
         User.user_list = []
 
-        ########2nd test########
+#2nd test
 
     def test__init(self):
         '''
@@ -35,7 +35,7 @@ class TestUser(unittest.TestCase):
         self.new_user.save_user()
         self.assertEqual(len(User.user_list), 1)
 
-        ##############3rd test#####save multiple users#####
+#3rd test_save multiple users
 
     def test_save_mutliple_users(self):
         '''
@@ -46,7 +46,7 @@ class TestUser(unittest.TestCase):
         test_user.save_user()
         self.assertEqual(len(User.user_list), 2)
 
-        ###########4th test#####Delete user#####
+#4th test_Delete user
 
     def test_delete_user(self):
         '''
@@ -59,7 +59,7 @@ class TestUser(unittest.TestCase):
         self.assertEqual(len(User.user_list), 1)
 
 
-###########5th test###########
+#5th test
 
     def test_find_user(self):
         '''
