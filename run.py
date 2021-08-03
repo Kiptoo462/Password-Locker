@@ -4,7 +4,7 @@ from user import User
 import random
 
 #user 
-####crate account####
+#crate account
 def create_useraccount(username, password):
     '''
     method creates a user account
@@ -12,7 +12,7 @@ def create_useraccount(username, password):
     new_user = User(username, password)
     return new_user
 
-    ######save user#####
+#save user
 def save_user(user):
     '''
     method save user  account
@@ -28,7 +28,7 @@ def save_credentials(credentials):
     credentials.save_credentials
 
 
-    ######search user########
+#search user
 
 def find_user(username):
     '''
@@ -36,7 +36,7 @@ def find_user(username):
     '''
     return User.find_user(username)
 
-    # create credentials####
+# create credentials
 def create_credentials(account, email, passlock):
     '''
     method credentials details
@@ -44,7 +44,7 @@ def create_credentials(account, email, passlock):
     new_cred = Credentials(account, email, passlock)
     return new_cred
 
-    ###save credential#######
+#save credential
 
 def save_cred(cred):
     '''
@@ -53,7 +53,7 @@ def save_cred(cred):
     cred.save_cred()
 
 
-    ######dispaly credential#######
+#dispaly credential
 
 def display_cred():
     '''
@@ -62,7 +62,7 @@ def display_cred():
     return Credentials.display_cred()
 
 
-######search credentials#######
+#search credentials
 
 def find_account(account):
     '''
@@ -71,7 +71,7 @@ def find_account(account):
     return Credentials.find_account(account)
 
 
-    #######Delete credentials######
+#Delete credentials
 
 def delete_cred(account):
     '''
@@ -82,7 +82,7 @@ def delete_cred(account):
 
 
 def main():
-    # Dealing user class first
+ # Dealing user class first
     print("Welcome to Password Locker! Please enter your name:  ")
     name = input ()
     print(f"{name}, Sign up to continue")
@@ -111,7 +111,8 @@ def main():
             print(f"Logged in. Welcome {username}!")
             print("*" * 80)
             
-            #working with credentials now###
+ #working with credentials now###
+
             print("Use these short codes : ca - create a new account, da - display accounts, fa -find an account, gp - generate a random password , ex -exit the contact list ")
             print("*" * 80)
 
@@ -196,7 +197,7 @@ def main():
 
 
         else:
-            print("Invalid, please  use these short codes : ca - create a new account, da - display accounts, fa -find an account, de- delete account , gp - generate a random password , ex -logout")
+            print("Invalid, please  use these short codes : rg - Register new account, da - display accounts, fa -find an account, de- delete account , gp - generate a random password , ex -logout")
 if __name__ == '__main__':
     main()  
 
