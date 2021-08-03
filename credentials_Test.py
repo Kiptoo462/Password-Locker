@@ -15,7 +15,7 @@ class TestCredentials(unittest.TestCase):
         '''
         Credentials.cred_list = []
 
-        #######check initialization##########
+#check initialization
 
     def test_init(self):
         '''
@@ -25,7 +25,7 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_cred.email, "kiptoovictor462.com")
         self.assertEqual(self.new_cred.passlock, "Dskl321")
 
-        ############7th test############
+#7th test
 
     def test_save_credentials(self):
         '''
@@ -34,7 +34,7 @@ class TestCredentials(unittest.TestCase):
         self.new_cred.save_cred()
         self.assertEqual(len(Credentials.cred_list),1)
 
-        ##############8th test ##########saving multiple credentials###########
+#8th test_saving multiple credentials
 
     def test_saving_multiple_creds(self):
         '''
@@ -45,7 +45,7 @@ class TestCredentials(unittest.TestCase):
         test_cred.save_cred()
         self.assertEqual(len(Credentials.cred_list),2)
 
-        ############9th test#######deleting credentials#######
+#9th test_deleting credentials
 
     def test_delete_credentials(self):
         '''
@@ -58,7 +58,7 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(len(Credentials.cred_list), 1)
 
 
-        ##############10th test############search for credentials#######
+#10th test_search for credentials
 
     def test_search_for_cred(self):
         '''
@@ -70,7 +70,7 @@ class TestCredentials(unittest.TestCase):
         find_cred= Credentials.find_account("Twitter")
         self.assertEqual(find_cred.account, test_cred.account)
         
-        ############11th test########### confirm accounts credentials##########
+#11th test_confirm accounts credentials
 
     def test_confirm_cred_exists(self):
         '''
@@ -83,7 +83,7 @@ class TestCredentials(unittest.TestCase):
         self.assertTrue(cred_exists)
 
 
-        #################test 12th########Display credentials###########
+#test 12th_Display credentials
 
         
     def test_display_credentials(self):
@@ -94,7 +94,7 @@ class TestCredentials(unittest.TestCase):
 
 
 
-        #########copy password#########test 13th#####
+#copy password test 13th
 
     def test_copy_password(self):
         '''
