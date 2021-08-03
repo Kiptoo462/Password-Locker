@@ -55,17 +55,17 @@ class Credentials:
 
 #Display credentials
 
-    # @classmethod
-    # def display_cred(cls):
-    #     '''
-    #     method that returns all credentials
-    #     '''
-    #     return cls.cred_list
+    @classmethod
+    def display_cred(cls):
+        '''
+        method that returns all credentials
+        '''
+        return cls.cred_list
 
-#copy passwoed
+#copy password
 
 
-    # @classmethod
-    # def copy_passlock(cls, passlock):
-    #         find_account = Credentials.find_account(passlock)
-    #         pyperclip.copy(find_account.passlock)    
+    @classmethod
+    def copy_passlock(cls, passlock):
+            find_account = Credentials.find_account(passlock)
+            pyperclip.copy(find_account.passlock)    
